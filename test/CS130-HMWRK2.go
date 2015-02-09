@@ -13,6 +13,7 @@ type Car struct {
 
 func printCar(car Car) {
 
+	fmt.Println("Discouted Model:\n")
 	fmt.Println(car.model, car.price)
 }
 
@@ -30,10 +31,12 @@ func main() {
 		model: "Ferrari",
 		price: 200000,
 	}
-	printCar(car)
-		var model, _ = buyCar(car)
-			fmt.Println(model)
 
-		fmt.Println(BASEVAL)
+	printCar(car)
+	var model, _ = buyCar(car)
+	fmt.Println(model)
+
+	fmt.Println("\nbase model:")
+	fmt.Println(BASEVAL)
 
 }
